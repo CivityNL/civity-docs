@@ -9,6 +9,7 @@
 <url> <loc>https://CivityNL.github.io/blog/2017/04/10/blog-post-two</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://CivityNL.github.io/blog/2016/03/11/blog-post</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://CivityNL.github.io/docs/Adding Datasets</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/Adding Datasets" /> </url>
+<url> <loc>https://CivityNL.github.io/docs/CKAN and Portal</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/CKAN and Portal" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/Deleting Datasets</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/Deleting Datasets" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/Editing Datasets</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/Editing Datasets" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/five</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/five" /> </url>
