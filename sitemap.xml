@@ -8,6 +8,7 @@
 <url> <loc>https://CivityNL.github.io/blog/2017/09/25/testing-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://CivityNL.github.io/blog/2017/04/10/blog-post-two</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://CivityNL.github.io/blog/2016/03/11/blog-post</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://CivityNL.github.io/docs/current-versions</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/current-versions" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/AddingDatasets</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/AddingDatasets" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/DatasetandDatasource</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/DatasetandDatasource" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/DeletingDatasets</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/DeletingDatasets" /> </url>
@@ -19,5 +20,6 @@
 <url> <loc>https://CivityNL.github.io/docs/SortingDatasets</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/SortingDatasets" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/template</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/template" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/two</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/two" /> </url>
+<url> <loc>https://CivityNL.github.io/docs/uptime</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/uptime" /> </url>
 <url> <loc>https://CivityNL.github.io/docs/Welcome</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://CivityNL.github.io/docs/Welcome" /> </url>
 </urlset>
