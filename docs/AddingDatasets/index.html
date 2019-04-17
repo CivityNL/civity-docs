@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Adding Datasets · Civity Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;On this page, you will find the two steps required to publish datasets:&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Adding Datasets · Civity Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://CivityNL.github.io//"/><meta property="og:description" content="&lt;p&gt;On this page, you will find the two steps required to publish datasets:&lt;/p&gt;
+"/><meta property="og:image" content="https://CivityNL.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://CivityNL.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/civityHexLogo.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dark.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="https://github.com/CivityNL/civity-docs/blob/gh-pages/js/code-block-buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100,"backgroundColor":"#008FC7"}
+          )
+        });
+        </script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Civity Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/Welcome" target="_self">Docs</a></li><li class=""><a href="/help" target="_self">Help</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Dataplatform</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">City Innovation Platform<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/Welcome">Welcome</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Dataplatform<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/PortalandCKAN">Portal and CKAN</a></li><li class="navListItem"><a class="navItem" href="/docs/DatasetandDatasource">Dataset and Datasource</a></li><li class="navListItem"><a class="navItem" href="/docs/MetadataandDCAT">Metadata and DCAT</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Dataplatform CKAN</h4><ul><li class="navListItem navListItemActive"><a class="navItem" href="/docs/AddingDatasets">Adding Datasets</a></li><li class="navListItem"><a class="navItem" href="/docs/EditingDatasets">Editing Datasets</a></li><li class="navListItem"><a class="navItem" href="/docs/DeletingDatasets">Deleting Datasets</a></li><li class="navListItem"><a class="navItem" href="/docs/SearchDatasets">Searching Datasets</a></li><li class="navListItem"><a class="navItem" href="/docs/FilterDatasets">Filtering Datasets</a></li><li class="navListItem"><a class="navItem" href="/docs/SortingDatasets">Sorting Datasets</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Dataplatform Portal</h4><ul><li class="navListItem"><a class="navItem" href="/docs/two">two</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">template<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/template">template</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/CivityNL/civity-docs-edit/edit/drafts/dataplatform_user_AddingDatasets.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Adding Datasets</h1></header><article><div><span><p>On this page, you will find the two steps required to publish datasets:</p>
+<ol>
+<li>Adding metadata</li>
+<li>Adding your datasource</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="1-adding-metadata"></a><a href="#1-adding-metadata" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Adding Metadata</h2>
+<blockquote>
+<p>Metadata is simply data about data</p>
+</blockquote>
+<p>Metadata is data that provides information about other data. Typically this means a description and context about existing data.</p>
+<p>By conforming to the DCAT-Standard, datasets may be automatically registered in the National Open Data Register: <a href="https://www.data.overheid.nl">Data Overheid Nederland</a>.</p>
+<blockquote>
+<p><strong>What is the DCAT-Standard?</strong></p>
+<p>DCAT describes datasets in data catalogs. By utilizing the DCAT-Standard, publishers increase discoverability and enable applications to easily consume metadata from multiple catalogs. Furthermore, it enables decentralized publishing of catalogs and facilitates federated dataset search across sites. Aggregated DCAT metadata can serve as a manifest file to facilitate digital preservation.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="title"></a><a href="#title" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Title</h3>
+<p>A title is a unique identifier – it must be short and specific. For example, “Sporting Events 2016 Utrecht” is much more specific than “Sporting Events.” For best results, specify the location of the dataset inside the title, as this will allow users to better find your dataset on <a href="https://www.dataplatform.nl">Dataplatform.</a></p>
+<p>A good naming guideline to follow when creating a title:</p>
+<pre><code class="hljs css language-sh">root_category - subject - location(year) - version(number)
+</code></pre>
+<p>An example using our naming guideline:</p>
+<pre><code class="hljs css language-sh">Sport - Sporting Events - Utrecht 2019 - Version 1
+</code></pre>
+<p><img src="/docs/assets/AddingDatasets/dataplatform_user_addingDatasets_AddTitle.gif" alt="SCREENCAST: adding a title"></p>
+<blockquote>
+<p><em>Be mindful:</em></p>
+<p>The title you choose will be rendered as part of the dataset’s URL. The URL is generated in the following template: <a href="#blank">https://www.dataplatform.nl/data/YOUR_TITLE</a>.  When the title is generated into a URL, capital letters will be converted to small letters and spaces will be replaced by hypens ( - ).</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="description"></a><a href="#description" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Description</h3>
+<p>This field represents an overview of your dataset. Your description should answer the following questions:</p>
+<ul>
+<li>What is the data about?</li>
+<li>Where does the data come from?</li>
+<li>What is the quality of the data?</li>
+<li>Over what timeframe or period was the data recorded?</li>
+</ul>
+<p>You may use <a href="https://www.markdownguide.org/basic-syntax">Markdown Formatting</a> in the description field. This allows you to utilize headers, lists, <strong>bold</strong>, and <em>italics.</em></p>
+<p>Example, the following raw markdown:</p>
+<pre><code class="hljs css language-sh">* **Description:** Sporting Events Utrecht
+* **Source:** Permits Department
+* **Target:** Providing insights into events from the municipality
+* **Limitations:** This dataset is not to be used <span class="hljs-keyword">for</span> legal purposes
+* **Possibilities:** This dataset may be used <span class="hljs-keyword">for</span> insight into locations on a map
+* **Coordinate System:** WGS84
+</code></pre>
+<p>Will be rendered as:</p>
+<ul>
+<li><strong>Description:</strong> Sporting Events Utrecht</li>
+<li><strong>Source:</strong> Permits Department</li>
+<li><strong>Target:</strong> Providing insights into events from the municipality</li>
+<li><strong>Limitations:</strong> This dataset is not to be used for legal purposes</li>
+<li><strong>Possibilities:</strong> This dataset may be used for insight into locations on a map</li>
+<li><strong>Coordinate System:</strong> WGS84</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="tags"></a><a href="#tags" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tags</h3>
+<blockquote>
+<p>It is advisable to enter tags that do not appear in the description or title of your dataset. Dataplatform already indexes keywords in the Title and Description fields.</p>
+</blockquote>
+<p>Tags influence search terms. Utilizing tags will make your datasets easier to find. Entering the first few letters of your intended tag will make Dataplatform search for the closest existing match – if it matches, click on the tag in the dropdown list.
+If your intended tag does not match any existing entries, complete the entire word, then hit the <em>return</em> key. Once your new tag has been entered, it is now possible to use this as an existing tag.
+If you select the wrong tag, you may remove it by click on the cross “X” in front of the word.</p>
+<p><img src="/docs/assets/AddingDatasets/dataplatform_user_addingDatasets_AddTags.gif" alt="SCREENCAST: adding tags"></p>
+<h3><a class="anchor" aria-hidden="true" id="licenses"></a><a href="#licenses" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Licenses</h3>
+<blockquote>
+<p>Licenses dictate how your dataset may be used. You can find information about open data licenses here: <a href="http://opendefinition.org/licenses/">Conformant Licenses</a></p>
+</blockquote>
+<p>Licenses are selected by clicking on the dropdown box; you must select an option.</p>
+<p>The default license for open data is “Creative Commons CC Zero.” This means that the dataset may be used without limitations. The “Creative Commons Attribution” license allows users to freely use your data, but they must reference the source of the data.</p>
+<blockquote>
+<p>Open Data Register (Data Overheid) only publishes datasets with the following licenses:</p>
+</blockquote>
+<table>
+<thead>
+<tr><th style="text-align:left">Licenses</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left"><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC-0</a></td></tr>
+<tr><td style="text-align:left"><a href="https://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a></td></tr>
+<tr><td style="text-align:left"><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td></tr>
+<tr><td style="text-align:left"><a href="https://opendatacommons.org/licenses/pddl/summary/">Public Domain</a></td></tr>
+</tbody>
+</table>
+<p>If your require a different license, please contact Dataplatform’s administrator.</p>
+<h3><a class="anchor" aria-hidden="true" id="organization"></a><a href="#organization" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Organization</h3>
+<p>If you are part of an organization, you may only add and manage datasets and files connected to that organization; this field is completed in automatically.</p>
+<h3><a class="anchor" aria-hidden="true" id="visibility"></a><a href="#visibility" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Visibility</h3>
+<blockquote>
+<p>Visibility is set to private by default. Choose “public” to make the dataset available as open data on (<a href="http://dataplatform.nl)[https://www.dataplatform.nl]">dataplatform.nl)[https://www.dataplatform.nl]</a></p>
+</blockquote>
+<p>Dataplatform has two types of visibility options: private and public. Datasets that are marked as “private” are only viewable in <a href="https://www.ckan.dataplatform.nl">CKAN</a> for users with the correct organizational rights; the dataset is not viewable on <a href="https://www.dataplatform.nl"></a>.</p>
+<p>The visibility status of your dataset is indicated by a label in the top-right corner.</p>
+<p><img src="/docs/assets/AddingDatasets/dataplatform_user_addingDatasets_priveIndicator.png" alt="IMAGE: prive indicator"></p>
+<h3><a class="anchor" aria-hidden="true" id="provider"></a><a href="#provider" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Provider</h3>
+<blockquote>
+<p>This field is available for datasets that may be purchased or assigned</p>
+</blockquote>
+<p>This field provides the source of your data. The source will refer to this location, when the data is made publicly available; initially the data source is <em>not available.</em></p>
+<p>This field is not mandatory – if there is no information available, leave it blank.</p>
+<h3><a class="anchor" aria-hidden="true" id="version"></a><a href="#version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Version</h3>
+<blockquote>
+<p>Every dataset may be given a version number.</p>
+</blockquote>
+<p>Incrementing the version number on each subsequent edit will allow users to see whether there have been previous data sets, which are no longer viewable.</p>
+<h3><a class="anchor" aria-hidden="true" id="contact-email"></a><a href="#contact-email" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contact Email</h3>
+<p>The contact email allows users to send questions or comments to the dataset owner.</p>
+<h3><a class="anchor" aria-hidden="true" id="language"></a><a href="#language" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Language</h3>
+<p>The default language is set to Nederlands, but additional options are available from the drop-down box.</p>
+<h3><a class="anchor" aria-hidden="true" id="category"></a><a href="#category" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Category</h3>
+<p>Categories are pre-defined. You must select the closest match from the list.</p>
+<h3><a class="anchor" aria-hidden="true" id="data-owner"></a><a href="#data-owner" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data Owner</h3>
+<p>The owner of the dataset, typically this is an organization (province, ministry, municipality, etc).</p>
+<p>If you wish to be listed on the Open Data Registry (Data Overheid), the name in Data Owner must match the one given to the government agency on the Open Data Registry. The list of organizations can be found here: <a href="https://data.overheid.nl/data/organization">Organizations</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="provider-email"></a><a href="#provider-email" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Provider Email</h3>
+<p>This is the organization’s email, which allows users to contact you should they have questions or comments.</p>
+<p>This is usually a general email address, as the source holder’s email has been entered earlier</p>
+<h3><a class="anchor" aria-hidden="true" id="version-comments"></a><a href="#version-comments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Version Comments</h3>
+<p>You may make revision comments, concerning each version of the dataset. Typical comments would include: what was done, and an overview of what was added/removed.</p>
+<h3><a class="anchor" aria-hidden="true" id="update-frequency"></a><a href="#update-frequency" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update Frequency</h3>
+<p>This sets the update frequency of your dataset.</p>
+<h3><a class="anchor" aria-hidden="true" id="update-frequency-1"></a><a href="#update-frequency-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update Frequency</h3>
+<p>This sets the update frequency of your dataset.</p>
+<h3><a class="anchor" aria-hidden="true" id="location"></a><a href="#location" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Location</h3>
+<p>Each dataset is tied to a geographic location and geographic boundary.</p>
+<h2><a class="anchor" aria-hidden="true" id="2-adding-data-sources"></a><a href="#2-adding-data-sources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Adding Data Sources</h2>
+<p>Now that the metadata has been added, we can now add the dataset(s). Click on the “Next: Add Data” button at the bottom of the page.</p>
+<h3><a class="anchor" aria-hidden="true" id="source"></a><a href="#source" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Source</h3>
+<p>You may add data via upload or via URL.</p>
+<blockquote>
+<p>If a CSV or (geo)JSON are uploaded, these will be accessible by Dataplatform’s API. Other datatypes are saved and provided as a download link.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="additional-details"></a><a href="#additional-details" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Additional Details</h3>
+<p>Additional information may be added here. The following information deals with the additional fields:</p>
+<ul>
+<li>Name: <em>This will be the filename, ensure it is descriptive</em></li>
+<li>Description: <em>Provide an explanation of the contents of the file</em></li>
+<li>Format: <em>The format in which the source is provided (CSV, XLS, JSON, PDF, etc).</em></li>
+</ul>
+<p>If you have additional sources to add, choose &quot;Save &amp; Add Another.&quot;
+If you only have one, choose &quot;End.&quot;</p>
+<blockquote>
+<p>CKAN will now save the file and create a dataset. The resulting entry is immediately viewable - if the visibility is set to &quot;Public,&quot; the dataset will become viewable on <a href="https://www.dataplatform.nl">Dataplatform.nl</a>. &quot;Private&quot; datasets are not visible on Dataplatform.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="congrats-your-dataset-is-now-live"></a><a href="#congrats-your-dataset-is-now-live" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Congrats, your dataset is now live! 🎉🎉</h2>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/MetadataandDCAT"><span class="arrow-prev">← </span><span>Metadata and DCAT</span></a><a class="docs-next button" href="/docs/EditingDatasets"><span>Editing Datasets</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-adding-metadata">1. Adding Metadata</a><ul class="toc-headings"><li><a href="#title">Title</a></li><li><a href="#description">Description</a></li><li><a href="#tags">Tags</a></li><li><a href="#licenses">Licenses</a></li><li><a href="#organization">Organization</a></li><li><a href="#visibility">Visibility</a></li><li><a href="#provider">Provider</a></li><li><a href="#version">Version</a></li><li><a href="#contact-email">Contact Email</a></li><li><a href="#language">Language</a></li><li><a href="#category">Category</a></li><li><a href="#data-owner">Data Owner</a></li><li><a href="#provider-email">Provider Email</a></li><li><a href="#version-comments">Version Comments</a></li><li><a href="#update-frequency">Update Frequency</a></li><li><a href="#update-frequency-1">Update Frequency</a></li><li><a href="#location">Location</a></li></ul></li><li><a href="#2-adding-data-sources">2. Adding Data Sources</a><ul class="toc-headings"><li><a href="#source">Source</a></li><li><a href="#additional-details">Additional Details</a></li></ul></li><li><a href="#congrats-your-dataset-is-now-live">Congrats, your dataset is now live! 🎉🎉</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/civityHexLogo.png" alt="Civity Docs" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Civity B.V.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'BH4D9OD16A',
+                apiKey: 'b26499f361705dc5a4b74fe6c1663f75',
+                indexName: 'civitynl',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
