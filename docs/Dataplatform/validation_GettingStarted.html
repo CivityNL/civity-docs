@@ -75,7 +75,7 @@ For more info see <strong><a href="datasets_AddingDatasources">Adding Datasource
 <p>The following Step by Step guide will allow you to add a Resource and a Schema to your CKAN instance and validate it accordingly.</p>
 <h3><a class="anchor" aria-hidden="true" id="adding-a-resource"></a><a href="#adding-a-resource" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding a Resource</h3>
 <ul>
-<li>Start by navegating to the &quot;create resouce&quot; page in any of your datasets.</li>
+<li>Start by navigating to the &quot;create resouce&quot; page in any of your datasets.</li>
 </ul>
 <p><img src="/docs/assets/Dataplatform/Validation/add_data_empty.PNG" alt="Adding Data Empty"></p>
 <ul>
@@ -126,7 +126,7 @@ For more info see <strong><a href="datasets_AddingDatasources">Adding Datasource
 <h4><a class="anchor" aria-hidden="true" id="modes-of-operation"></a><a href="#modes-of-operation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modes of Operation</h4>
 <p>There are two possible modes in which the validation operates:</p>
 <ul>
-<li><p><strong><em>Asynchronous validation</em></strong> - <strong>Run in the background</strong> whenever a resource of a supported format is created or updated. Validation <strong>won't affect the action performed</strong>, so if there are validation errors found the reource will be created or updated anyway.</p></li>
+<li><p><strong><em>Asynchronous validation</em></strong> - Run in the background whenever a resource of a supported format is created or updated. Validation <strong>won't affect the action performed</strong>, so if there are validation errors found the reource will be created or updated anyway.</p></li>
 <li><p><strong><em>Synchronous validation</em></strong> - Performed at the same time a resource of the supported formats is being created or updated. Currently, <strong>if data validation errors are found</strong>, a ValidationError will be raised and <strong>you won't be able to create or update the resource</strong>.</p></li>
 </ul>
 <blockquote>
@@ -137,12 +137,12 @@ For more info see <strong><a href="datasets_AddingDatasources">Adding Datasource
 <ul>
 <li><p>When using the <em>Synchronous validation</em> the validation error thrown will look like this:
 <img src="/docs/assets/Dataplatform/Validation/validation_error.PNG" alt="Validation Options Filled"></p></li>
-<li><p>If you press on the link in &quot;<em>report</em>&quot; you will be showed the validation report. It includes the list of all errors grouped by type, and all the details of each error.</p></li>
+<li><p>Clicking on the &quot;<em>report</em>&quot; hyperlink inside the validation error message, will show you the validation overview. This includes a list of all errors grouped by type, and the details of each error.</p></li>
 </ul>
 <p>You can read the full specification of the validation report format <strong><a href="https://github.com/frictionlessdata/goodtables-py#validation-report-format">here</a></strong>, in the UI the report will look like this:
 <img src="/docs/assets/Dataplatform/Validation/validation_report.PNG" alt="Validation Options Filled"></p>
 <ul>
-<li>After a validation is performed on a resource, a label will be added in the UI with the proper result. You can press these labels and get redirected to the Data Validation Report Page.
+<li>When a validation is performed on a resource, a label will be added in the UI with the proper result. You can click on these labels to be redirected to the Data Validation Report Page.
 <img src="/docs/assets/Dataplatform/Validation/labels.PNG" alt="Validation Labels"></li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="api-documentatition"></a><a href="#api-documentatition" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API Documentatition</h3>
@@ -152,14 +152,14 @@ For more info see <strong><a href="datasets_AddingDatasources">Adding Datasource
 <blockquote>
 <p><a href="http://try.goodtables.io/" target="_blank">Goodtables Web Service</a>, see the <a href="https://frictionlessdata.io/docs/validating-data/#goodtables" target="_blank">official documentation here</a>.</p>
 </blockquote>
-<p>How to do your first validation:</p>
+<p>Completing your first validation:</p>
 <ul>
 <li>Go to the <strong><em><a href="http://try.goodtables.io/" target="_blank">Validation Tool</a></em></strong>.</li>
-<li>Provide a tabular data file to validate by referring to an <strong><em>URL</em></strong> or <strong><em>uploading a file</em></strong> (<strong><em><a href="validation_GettingStarted#tabular-data">example files</a></em></strong>).</li>
+<li>Provide a tabular data file to validate by referring to a <strong><em>URL</em></strong> or <strong><em>uploading a file</em></strong> (<strong><em><a href="validation_GettingStarted#tabular-data">example files</a></em></strong>).</li>
 <li>(<strong>optional</strong>) Provide a data schema to validate the data with. <strong><em><a href="validation_GettingStarted#create-data-schema">Create one</a></em></strong> or use the <strong><em><a href="validation_GettingStarted#data-schema">example</a></em></strong>.</li>
 <li>Check/Uncheck options <em>&quot;ignore blank rows&quot;</em> and <em>&quot;ignore duplicate rows&quot;</em> according to your needs.</li>
-<li>Press <strong><em>Validate</em></strong> button.</li>
-<li>Analyze the resulting report.</li>
+<li>Click the <strong><em>Validate</em></strong> button.</li>
+<li>Analyze your completed validation report.</li>
 </ul>
 <p>You can also use your own files and apply the corrections to the files, try to upload again and check the results.</p>
 <h2><a class="anchor" aria-hidden="true" id="create-data-schema"></a><a href="#create-data-schema" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create Data Schema</h2>
