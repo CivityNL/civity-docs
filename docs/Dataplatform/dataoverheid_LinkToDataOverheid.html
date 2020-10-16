@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Link To Data Overheid · Civity Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The link to *Data Overheid* is the service that allows datasets in &lt;a href=&quot;https://www.dataplatform.nl/&quot; target=&quot;_blank&quot;&gt;**Dataplatform**&lt;/a&gt; to be synched with &lt;a href=&quot;https://data.overheid.nl/&quot; target=&quot;_blank&quot;&gt;**Data Overheid**&lt;/a&gt;."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Link To Data Overheid · Civity Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://CivityNL.github.io//"/><meta property="og:description" content="The link to *Data Overheid* is the service that allows datasets in &lt;a href=&quot;https://www.dataplatform.nl/&quot; target=&quot;_blank&quot;&gt;**Dataplatform**&lt;/a&gt; to be synched with &lt;a href=&quot;https://data.overheid.nl/&quot; target=&quot;_blank&quot;&gt;**Data Overheid**&lt;/a&gt;."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/civityHexLogo.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dark.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="https://github.com/CivityNL/civity-docs/blob/gh-pages/js/code-block-buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100,"backgroundColor":"#008FC7"}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Civity Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/Welcome" target="_self">Docs</a></li><li class=""><a href="/help" target="_self">Help</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/CivityNL/civity-docs-edit/edit/drafts/Dataplatform/dataplatform_DATAOVERHEID_LinkToDataOverheid.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Link To Data Overheid</h1></header><article><div><span><p>The link to <em>Data Overheid</em> is the service that allows datasets in <a href="https://www.dataplatform.nl/" target="_blank"><strong>Dataplatform</strong></a> to be synched with <a href="https://data.overheid.nl/" target="_blank"><strong>Data Overheid</strong></a>.
+<img src="/docs/assets/Dataplatform/LinkToDataOverheid/Dataplatform_to_Overheid.svg" alt="Dataplatform_To_Data_Overheid"></p>
+<h2><a class="anchor" aria-hidden="true" id="how-it-works"></a><a href="#how-it-works" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How it works</h2>
+<p>This service <strong>runs every night</strong>, and syncronyzes all, <strong>publicly available</strong>, datasets in <em>Dataplatform</em>.</p>
+<blockquote>
+<p>Only <strong>public datasets</strong> in <em>Dataplatform</em> are synched to <em>Data Overheid</em></p>
+</blockquote>
+<p>Metadata fields <strong>restrictions</strong> vary in  <em>Data Overheid</em> and <em>Dataplatform</em>.
+In order to comply with both schemas we defined a set of <strong>default values</strong> that are used
+to replace invalid/absent values.</p>
+<p>Here is the list of <strong>Default Values</strong> and corresponding metadata fields in <em>Dataplatform</em>/<em>Data Overheid</em>:</p>
+<table>
+<thead>
+<tr><th>Dataplatform Field</th><th>Data Overheid Field</th><th>Default Value</th></tr>
+</thead>
+<tbody>
+<tr><td>owner_org (<em>organization</em>)</td><td>authority</td><td>'<a href="http://standaarden.overheid.nl/op/terms/overig'">http://standaarden.overheid.nl/op/terms/overig'</a></td></tr>
+<tr><td>maintainer_email</td><td>contact_point_email</td><td><a href="mailto:'support@civity.nl">'support@civity.nl</a>'</td></tr>
+<tr><td>maintainer</td><td>contact_point_name</td><td>'Dataplatform'</td></tr>
+<tr><td>(any) date field</td><td>(any) date field</td><td>Current Time in following format '%Y-%m-%dT%H:%M:%S'</td></tr>
+<tr><td>description</td><td>description</td><td>'No Description'</td></tr>
+<tr><td>format</td><td>format</td><td>'<a href="http://publications.europa.eu/resource/authority/file-type/TXT'">http://publications.europa.eu/resource/authority/file-type/TXT'</a></td></tr>
+<tr><td>language</td><td>language</td><td>'<a href="http://publications.europa.eu/resource/authority/language/NLD'">http://publications.europa.eu/resource/authority/language/NLD'</a></td></tr>
+<tr><td>license_id</td><td>license_id</td><td>'<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.nl'">http://creativecommons.org/publicdomain/zero/1.0/deed.nl'</a></td></tr>
+<tr><td>metadata_language</td><td>metadata_language</td><td>'<a href="http://publications.europa.eu/resource/authority/language/NLD'">http://publications.europa.eu/resource/authority/language/NLD'</a></td></tr>
+<tr><td>name</td><td>name</td><td>'Naamloze bron'</td></tr>
+<tr><td>notes</td><td>notes</td><td>'Geen beschrijving'</td></tr>
+<tr><td>publisher</td><td>publisher</td><td>'<a href="http://standaarden.overheid.nl/op/terms/overig'">http://standaarden.overheid.nl/op/terms/overig'</a></td></tr>
+<tr><td>theme</td><td>theme</td><td>'<a href="http://standaarden.overheid.nl/owms/terms/Bestuur'">http://standaarden.overheid.nl/owms/terms/Bestuur'</a></td></tr>
+<tr><td>title</td><td>title</td><td>'Naamloze dataset'</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="data-overheid"></a><a href="#data-overheid" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data Overheid</h2>
+<p>More information about <strong><em>Data Overheid</em></strong> here:</p>
+<ul>
+<li><a href="https://data.overheid.nl/" target="_blank"><strong><em>Data Overheid</em> Portal</strong></a></li>
+<li><a href="https://data.overheid.nl/data/" target="_blank"><strong><em>Data Overheid</em> CKAN</strong></a></li>
+<li><a href="https://ckanext-dcatdonl.readthedocs.io/en/latest/index.html" target="_blank"><strong>Documentation DataOverheid Extension</strong></a>
+<ul>
+<li><a href="https://ckanext-dcatdonl.readthedocs.io/en/latest/schema-dataset.html" target="_blank"><strong>Dataset Metadata Schema</strong></a></li>
+<li><a href="https://ckanext-dcatdonl.readthedocs.io/en/latest/schema-resource.html" target="_blank"><strong>Resource Metadata Schema</strong></a></li>
+</ul></li>
+<li><a href="https://github.com/dataoverheid/ckanext-dataoverheid" target="_blank"><strong>GitHub repository for DataOverheid Extension</strong></a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="known-limitations"></a><a href="#known-limitations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Known Limitations</h2>
+<pre><code class="hljs">- Resources can't have the same name under the same dataset.
+- Names are the unique identifier, can't be duplicated in the whole Data Overheid side.
+- Currently not all the metadata fields are being synchronized.</code></pre>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 10/16/2020 by Mathieu Ronkes Agerbeek</em></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#how-it-works">How it works</a></li><li><a href="#data-overheid">Data Overheid</a></li><li><a href="#known-limitations">Known Limitations</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="padding-left:7rem"><a href="/" class="nav-home"><img src="/img/civityHexLogo.png" alt="Civity Docs" width="66" height="58"/></a><div><h5>Resources</h5><a href="https://status.civity.nl/" target="_blank" rel="noreferrer noopener">Service Uptime</a><a href="/docs/current-versions.html">Current Product Versions</a><a href="https://onetrail.atlassian.net/servicedesk/customer/portal/7" target="_blank" rel="noreferrer noopener">👾 Report a bug 👾</a></div><div><h5>Products</h5><a href="https://www.dataplatform.nl/" target="_blank" rel="noreferrer noopener">Dataplatform</a><a href="https://www.slimmelden.nl/" target="_blank" rel="noreferrer noopener">Slim Melden</a></div><div><h5>More</h5><a href="https://twitter.com/CivityNL" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.linkedin.com/company/civity-b-v-/" target="_blank" rel="noreferrer noopener">LinkedIn</a></div></section><section class="copyright">Copyright © 2020 Civity B.V. Landing imageStyles by <a href="https://undraw.co/" target="_blank">unDraw</a>.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'BH4D9OD16A',
+                apiKey: 'b26499f361705dc5a4b74fe6c1663f75',
+                indexName: 'civitynl',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

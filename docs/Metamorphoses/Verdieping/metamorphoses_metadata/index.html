@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Metadata · Civity Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Een andere belangrijke hulp bij het bepalen van de kwaliteit en mogelijke relevantie van een dataset, is metadata. "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Metadata · Civity Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://CivityNL.github.io//"/><meta property="og:description" content="Een andere belangrijke hulp bij het bepalen van de kwaliteit en mogelijke relevantie van een dataset, is metadata. "/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/civityHexLogo.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dark.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="https://github.com/CivityNL/civity-docs/blob/gh-pages/js/code-block-buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100,"backgroundColor":"#008FC7"}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Civity Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/Welcome" target="_self">Docs</a></li><li class=""><a href="/help" target="_self">Help</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/CivityNL/civity-docs-edit/edit/drafts/Metamorphoses/Verdieping/metamorphoses_metadata.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Metadata</h1></header><article><div><span><p>Een andere belangrijke hulp bij het bepalen van de kwaliteit en mogelijke relevantie van een dataset, is metadata.</p>
+<blockquote>
+<p>Als je de gebruikers van de data niet vertelt wat het is, hoe actueel het is en hoe het kan worden gebruikt, hoe kun je dan verwachten dat ze het effectief gebruiken?</p>
+</blockquote>
+<p>Metadata is de beschrijvende informatie over de gegevens zelf. De basiskenmerken van metagegevens vertellen wat de gegevens zijn, hoe de gegevens moeten worden geïnterpreteerd voor gebruik en hoe de gegevens werden opgesteld. Hoe metagegevens worden toegevoegd aan een databron, verschilt van formaat tot formaat verschillen. Soms is het een bijbehorend bestand (bijv. leesmij.txt of een PDF), of een extra tabel in de database of het tabblad in een Excel-spreadsheet met meerdere tekst- of notitievelden met beschrijvende en contactgegevens.</p>
+<p>In algemene zin zou de inhoud tenminste de volgende informatie moeten omvatten:</p>
+<ul>
+<li>Gegevensbeschrijving en algemeen gebruik;</li>
+<li>Creatie datum of datumbereik van inhoud;</li>
+<li>Auteur- en contactgegevens;</li>
+<li>Beschrijvingen van sleutelvelden en / of veldcodes, en;</li>
+<li>Beperkingen en disclaimer (indien van toepassing).</li>
+</ul>
+<p>Er zijn meerdere metadata standaarden in gebruik. Voor open data hanteert de Nederlandse overheid de DCAT-standaard. Uitgebreide info is te vinden op de site van <a href="http://data.overheid.nl">data.overheid.nl</a>: <a href="https://data.overheid.nl/ondersteuning/open-data/dcat">https://data.overheid.nl/ondersteuning/open-data/dcat</a>.</p>
+<p>Voor geografische data is er de ISO 19115-standaard. Op de site van Geonovum is daar uitgebreide informatie over te vinden: <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/">https://docs.geostandaarden.nl/md/mdprofiel-iso19115/</a></p>
+<ul>
+<li>Kwaliteit: is het goede data? Is het bijvoorbeeld een net geordend Excel bestand, of zijn het foto's van aantekeningen. In het eerste geval kan je er meteen mee aan de slag, terwijl je in het andere geval een hoop acties moet ondernemen voor je het echt kan gebruiken. Maar denk ook aan het detailniveau: zijn het geaggregeerde gegevens over een hele stad, of bevat het de gegevens per kleinste eenheid. Misschien dat je alleen behoefte hebt aan het stadsgemiddelde, maar als een iets beter detail nodig is loop je in het eerste geval al vast. Terwijl je detailgegevens altijd weer zelf kan aggregeren naar welk niveau dan ook.</li>
+<li>Eigenaar: wie heeft de data in bezit? Dit is vooral belangrijk als er onduidelijkheden optreden. Als de databron in eigen beheer is, kan er makkelijker nagegaan worden waar er misschien iets mis is gegaan. Terwijl bij externe databronnen deze controle een stuk moeilijker kan zijn.</li>
+<li>Updatefrequentie: hoe 'oud' is de data en hoe vaak wordt deze bijgewerkt? Dit betekent niet dat elke databron elke maand bijgewerkt moet worden, want voor een hoop databronnen is dat ook niet haalbaar of nuttig. Maar het is wel belangrijk om te weten wat de frequentie is en of dit past bij het doel waarvoor de bron gebruikt gaat worden. Stel dat het doel binnen 8 jaar behaald gaat worden, maar de frequentie ligt op 10 jaar dan is deze bron niet geschikt. Of als het om een eenmalige databron gaat, dan kan het zijn dat deze, ondanks de goede kwaliteit, toch niet bruikbaar is.</li>
+<li>Dekking: beslaat de data het gebied of de tijdsperiode waarover het gaat? Vaak is het namelijk wel mogelijk om een goede databron te vinden, maar die is niet dekkend voor het hele gebied. Of voor een hele period.</li>
+</ul>
+<p>Naast metadata, zijn datamodellen een andere belangrijke manier om de kwaliteit van een databron te bepalen en te verbeteren.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 10/16/2020 by Mathieu Ronkes Agerbeek</em></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="padding-left:7rem"><a href="/" class="nav-home"><img src="/img/civityHexLogo.png" alt="Civity Docs" width="66" height="58"/></a><div><h5>Resources</h5><a href="https://status.civity.nl/" target="_blank" rel="noreferrer noopener">Service Uptime</a><a href="/docs/current-versions.html">Current Product Versions</a><a href="https://onetrail.atlassian.net/servicedesk/customer/portal/7" target="_blank" rel="noreferrer noopener">👾 Report a bug 👾</a></div><div><h5>Products</h5><a href="https://www.dataplatform.nl/" target="_blank" rel="noreferrer noopener">Dataplatform</a><a href="https://www.slimmelden.nl/" target="_blank" rel="noreferrer noopener">Slim Melden</a></div><div><h5>More</h5><a href="https://twitter.com/CivityNL" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.linkedin.com/company/civity-b-v-/" target="_blank" rel="noreferrer noopener">LinkedIn</a></div></section><section class="copyright">Copyright © 2020 Civity B.V. Landing imageStyles by <a href="https://undraw.co/" target="_blank">unDraw</a>.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'BH4D9OD16A',
+                apiKey: 'b26499f361705dc5a4b74fe6c1663f75',
+                indexName: 'civitynl',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
