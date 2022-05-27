@@ -4,8 +4,8 @@
   <ShortName>Civity Docs</ShortName>
   <Description>Search Civity Docs</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://CivityNL.github.io/nl/img/civityHexLogo.png</Image>
-  <Url type="text/html" method="get" template="https://CivityNL.github.io/nl/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://CivityNL.github.io/nl/opensearch.xml" />
-  <moz:SearchForm>https://CivityNL.github.io/nl/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://CivityNL.github.io/civity-docs/nl/img/civityHexLogo.png</Image>
+  <Url type="text/html" method="get" template="https://CivityNL.github.io/civity-docs/nl/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://CivityNL.github.io/civity-docs/nl/opensearch.xml" />
+  <moz:SearchForm>https://CivityNL.github.io/civity-docs/nl/</moz:SearchForm>
 </OpenSearchDescription>
